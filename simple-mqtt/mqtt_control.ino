@@ -1,9 +1,9 @@
 
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
-const char* ssid = "HES STUDIO";
-const char* password = "akugaktausihkoktanyaaku";
-const char* mqtt_server = "192.168.0.27";
+const char* ssid = "SSID";
+const char* password = "PASSWORD";
+const char* mqtt_server = "IP";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -23,11 +23,11 @@ void setup_wifi() {
 }
 
 void callback(String topic, byte* payload, unsigned int length) {
-  String topicLamp = "room/lamp";  
+  String topicLamp = "TOPIC";  
   String messageTemp;
 
   Serial.print(topic);
-  Serial.print("\tCommand : ");
+  Serial.print("\t Command : ");
   
   for (int i = 0; i < length; i++) {
     messageTemp += (char)payload[i];
@@ -35,11 +35,11 @@ void callback(String topic, byte* payload, unsigned int length) {
 
   if(topic == topicLamp){
     if(messageTemp == "1"){
-      digitalWrite(13, HIGH);
+      digitalWrite(#PIN, HIGH);
       Serial.print("Lamp On");
     }
     else if(messageTemp == "0"){
-      digitalWrite(13, LOW);
+      digitalWrite(#PIN, LOW);
       Serial.print("Lamp Off");
     }
   }
@@ -53,7 +53,7 @@ void reconnectmqtt() {
     if (client.connect("ESP8266Client")) {
       Serial.println("Tersambung");
       client.publish("room", "Tersambung");
-      client.subscribe("room/lamp");
+      client.subscribe("TOPIC");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -68,7 +68,7 @@ void setup() {
   setup_wifi();
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
-  pinMode(13, OUTPUT);
+  pinMode(PIN, OUTPUT);
 }
 
 // the loop function runs over and over again forever
