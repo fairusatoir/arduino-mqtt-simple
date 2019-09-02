@@ -11,9 +11,9 @@ A. Mosquitto
 
 B. Arduino IDE
   - Install Arduino IDE (https://www.arduino.cc/en/main/software)
-  - Pindahkan pubsubclient-2.7 ke */Arduino/libraries
+  - Downlaod pubsubclient-2.7 (https://www.arduinolibraries.info/libraries/pub-sub-client) dan pindah ke */Arduino/libraries
   - Install Nodemcu Board (https://www.teachmemicro.com/intro-nodemcu-arduino/)
   
 C. Mikrokontroler
   - Download kode mqtt_control dan mqtt_simple
-  - Run
+  - UPLOAD
