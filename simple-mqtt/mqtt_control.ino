@@ -52,7 +52,7 @@ void reconnectmqtt() {
     //Change connect() if using another device
     if (client.connect("ESP8266Client")) {
       Serial.println("Tersambung");
-      client.publish("room", "Tersambung");
+      //client.publish("room", "Tersambung");
       client.subscribe("TOPIC");
     } else {
       Serial.print("failed, rc=");
