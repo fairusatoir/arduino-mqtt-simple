@@ -28,7 +28,7 @@
 <br />
 <p align="center">
   <a href="https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/images/logo.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Arduino MQTT Simple</h3>
@@ -81,7 +81,7 @@
 
 <p align="center">
   <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS46nSgHnlJWRIzc1EOj24YyXBahkXdz7qUaA&usqp=CAU">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS46nSgHnlJWRIzc1EOj24YyXBahkXdz7qUaA&usqp=CAU" alt="Logo" width="max" height="max">
   </a>
 </p>
 
