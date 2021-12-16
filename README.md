@@ -149,7 +149,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/zuhairatoir) - fairusatoir98@gmail.com
+Your Name - [@zuhairatoir](https://twitter.com/zuhairatoir) - fairusatoir98@gmail.com
 
 Project Link: [https://github.com/fairusatoir/arduino-mqtt-simple](https://github.com/fairusatoir/arduino-mqtt-simple)
 
